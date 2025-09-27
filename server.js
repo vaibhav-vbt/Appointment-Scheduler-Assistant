@@ -58,7 +58,7 @@ app.post(
         // Good practice: Clean up the temporary file created by Multer
         if (fileData.path && fs.existsSync(fileData.path)) {
           console.log(fileData.path);
-          fs.unlinkSync(fileData.path);
+          // fs.unlinkSync(fileData.path);
         }
       }
     } else if (textData) {
